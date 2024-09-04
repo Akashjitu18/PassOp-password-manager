@@ -207,7 +207,7 @@ else{
 
                   <td className=' text-center  py-2 border border-white'>
                     <div className='flex items-center justify-center gap-2'>
-                      <span>{item.password}</span>
+                      <span>{"*".repeat(item.password.length)}</span>
                       <div className='cursor-pointer' onClick={() => copyText(item.password)}>
                         <lord-icon
                           style={{ "width": "25px", "height": "25px", "paddingTop": "3px", "paddingLeft": "3px" }}
