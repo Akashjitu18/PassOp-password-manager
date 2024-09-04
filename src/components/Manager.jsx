@@ -21,12 +21,12 @@ const Manager = () => {
 
   const showPassword = () => {
 
-    if (show.current.src.includes("public/icons/eyecross.png")) {
-      show.current.src = "public/icons/eye.png"
+    if (show.current.src.includes("icons/eyecross.png")) {
+      show.current.src = "icons/eye.png"
       passwordRef.current.type = "password"
     }
     else {
-      show.current.src = "public/icons/eyecross.png"
+      show.current.src = "icons/eyecross.png"
       passwordRef.current.type = "text"
     }
   }
@@ -147,7 +147,7 @@ else{
             <input onChange={handleChange} className='rounded-full border border-green-600 w-full p-4 py-1' type="text" value={form.username} placeholder='Enter Username' name="username" id="username" />
             <div className="relative">
               <input ref={passwordRef} onChange={handleChange} className='rounded-full border border-green-600 w-full p-4 py-1' type="password" value={form.password} placeholder='Enter Password' name="password" id="password" />
-              <span onClick={showPassword} className='absolute right-2 top-1  cursor-pointer'><img ref={show} className='p-1' width={28} src="public\icons\eye.png" alt="eye" /></span>
+              <span onClick={showPassword} className='absolute right-2 top-1  cursor-pointer'><img ref={show} className='p-1' width={28} src="icons\eye.png" alt="eye" /></span>
             </div>
           </div>
           <button onClick={savePassword} className='flex justify-center items-center gap-2 bg-green-400 hover:bg-green-500 rounded-full px-8 py-2 w-fit border border-green-900 font-bold text-lg'>
